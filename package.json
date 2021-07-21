@@ -1,0 +1,33 @@
+{
+  "name": "@batou.dev/vuex-persist-plugin",
+  "version": "0.1.0",
+  "author": "Vincent Batoufflet <vincent@batou.dev>",
+  "license": "MIT",
+  "repository": "https://github.com/vbatoufflet/vuex-persist-plugin",
+  "main": "dist/vuex-persist.js",
+  "module": "dist/vuex-persist.es.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "dist/vuex-persist.es.js",
+    "dist/vuex-persist.js",
+    "src",
+    "types",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "lint": "eslint .",
+    "release": "npm run --production build && npm publish"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^19.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
+    "eslint": "^7.31.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "rollup-plugin-esbuild": "^4.5.0",
+    "typescript": "^4.3.5",
+    "vuex": "^3.6.2"
+  }
+}
