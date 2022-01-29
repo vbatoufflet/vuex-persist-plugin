@@ -10,7 +10,7 @@ Install
 
 To get started using this plugin, add the dependency via npm:
 
-```
+```shell
 npm install @batou.dev/vuex-persist-plugin
 ```
 
