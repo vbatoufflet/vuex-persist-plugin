@@ -3,24 +3,28 @@
     "baseUrl": ".",
     "esModuleInterop": true,
     "lib": [
-      "dom",
-      "esnext"
+      "ESNext",
+      "DOM",
     ],
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "noEmit": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "paths": {
-      "@/*": [
+      "~*": [
         "./*"
       ]
     },
     "strict": true,
-    "target": "esnext"
+    "target": "ESNext",
   },
   "exclude": [
     "node_modules"
   ],
   "include": [
-    "src/**/*.ts",
-    "types/**/*.d.ts"
+    "src",
+    "types"
   ]
 }

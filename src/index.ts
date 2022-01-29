@@ -1,6 +1,6 @@
 import {Plugin, Store} from "vuex";
 
-import {PersistConfig} from "@/types";
+import {PersistConfig} from "~types";
 
 const defaultConfig: PersistConfig<unknown> = {
     debounce: 250,
